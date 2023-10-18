@@ -3,28 +3,27 @@
 
 int main() {
     char A[11], B[11];
-    
-    // Read the input strings
+
+
     scanf("%s", A);
     scanf("%s", B);
 
-    // Calculate the sizes of strings A and B
-    int sizeA = strlen(A);
-    int sizeB = strlen(B);
 
-    // Concatenate strings A and B
-    char concatenated[21];
-    strcpy(concatenated, A);
-    strcat(concatenated, B);
+    int lA = strlen(A);
+    int lB = strlen(B);
 
-    // Swap the first characters of A and B
+
+    char c[21];
+    strcpy(c, A);
+    strcat(c, B);
+
     char temp = A[0];
     A[0] = B[0];
     B[0] = temp;
 
-    // Print the results
-    printf("%d %d\n", sizeA, sizeB);
-    printf("%s\n", concatenated);
+
+    printf("%d %d\n", lA, lB);
+    printf("%s\n", c);
     printf("%s %s\n", A, B);
 
     return 0;
